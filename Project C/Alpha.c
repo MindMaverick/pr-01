@@ -2,7 +2,7 @@
 /*My name is Md Shakil ,, Department of CSE,, SEU,
 id:2023200000821, writing date, 1 Mar 2024*/
 #include <stdio.h>
-const float pi = 3.14; // a constant and floating value
+const float pi = 3.14; // a constant and floating value also declaring globally
 
 int main()
 {
