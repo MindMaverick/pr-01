@@ -2,7 +2,7 @@
  * File: temperature_converter.c
  * Author: Md Shakil
  * Student ID: 2023200000821
- * Date: 06 March 2024
+ * Date: 09 March 2024
  * Description: This program demonstrates the use of choice, if, else if statements, and functions to calculate temperature in either Fahrenheit or Celsius units. It's a demonstration of conversion between the two units, serving as a temperature converter.
  */
 
