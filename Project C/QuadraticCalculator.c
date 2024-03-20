@@ -1,6 +1,6 @@
 // UP Date march20,2024, @ cse 161
 #include <stdio.h>
-#include <math.h> // Include the math library for the sqrt function
+#include <math.h> // math library for the sqrt function
 
 int main(void)
 {
@@ -54,17 +54,17 @@ int main(void)
                     break;
                 default:
                     printf("Invalid choice. Please try again.\n");
-                    val = 0; // Ensure the loop continues for invalid choice
+                    val = 0; // Ensures the loop continues as for invalid choice
                     break;
                 }
-            } while (val == 0); // Use == for comparison
+            } while (val == 0);
         }
         else
         {
             printf("No real roots\n");
         }
 
-        // Ask the user if they want to continue or exit
+        // Ask user if they want to continue or exit the program
         printf("Do you want to calculate another quadratic equation? (1 for yes, 0 for no): ");
         scanf("%d", &val);
         if (val == 0)
