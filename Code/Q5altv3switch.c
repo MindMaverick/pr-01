@@ -10,7 +10,7 @@ int main()
     printf("Enter the student's score: ");
     scanf("%d", &score);
 
-    // category based on score formula= condition ? value_if_true : value_if_false
+    // category formula= condition ? value_if_true : value_if_false
     category = (score >= 80) ? 1 : (score >= 75) ? 2
                                : (score >= 70)   ? 3
                                : (score >= 65)   ? 4
@@ -21,7 +21,7 @@ int main()
                                : (score >= 40)   ? 9
                                                  : 10;
 
-    // Using switch-case to set grade, gradePoint, and remark55
+    // Using switch to set grade, gradePoint, and remark55
     switch (category)
     {
     case 1:
