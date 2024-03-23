@@ -68,7 +68,7 @@ int main()
     // If grade is 'F', print donkey image
     if (grade[0] == 'F')
     {
-        printf("Student failed. Here's a donkey image to cheer you up:\n");
+        printf("Student failed. Here's a donkey so cheer you up:\n");
         printf("  \\    ,__\n");
         printf("   \\  (oo)____\n");
         printf("      (__)    )\\\n");
