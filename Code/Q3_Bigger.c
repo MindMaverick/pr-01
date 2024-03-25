@@ -2,28 +2,25 @@
 // ans
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int a, b, c, largest;
-    printf("Enter the value of A, \n");
+    printf("Enter the value of A: ");
     scanf("%d", &a);
-    printf("Enter the value of B, \n");
+    printf("Enter the value of B: ");
     scanf("%d", &b);
-    printf("Enter the value of C, \n");
+    printf("Enter the value of C: ");
     scanf("%d", &c);
 
-    largest = a; //imagine
+    largest = a; // Assume a is the largest initially
 
-    if (b > largest)
-    {
-        largest = b;
+    if (b > largest) {
+        largest = b; // If b is larger than largest, update largest to b
     }
-    else if (c > largest)
-    {
-        largest = c;
+    if (c > largest) {
+        largest = c; // If c is larger than largest (which may have been updated in the previous step), update largest to c
     }
 
-    printf("The largest number is %d", largest);
+    printf("The largest number is %d\n", largest);
 
     return 0;
 }
