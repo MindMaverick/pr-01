@@ -4,7 +4,7 @@
 int main()
 {
     int score;
-    char grade[3];
+    char grade[3];//[3] for array of 3 values , as a+ | a- |a ,,,bulues
     float gradePoint;
 
     // Ask the user to input the score
