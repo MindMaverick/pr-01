@@ -1,9 +1,10 @@
-// Q.Write a program to find the largest of three numbers entered by the user.
+// Q.Write a program to find the Larger of three numbers entered by the user.
 // ans
 #include <stdio.h>
 
-int main() {
-    int a, b, c, largest;
+int main()
+{
+    int a, b, c, Shakil;
     printf("Enter the value of A: ");
     scanf("%d", &a);
     printf("Enter the value of B: ");
@@ -11,16 +12,18 @@ int main() {
     printf("Enter the value of C: ");
     scanf("%d", &c);
 
-    largest = a; // Assume a is the largest initially
+    Shakil = a; // Assume a is the Shakil initially
 
-    if (b > largest) {
-        largest = b; // If b is larger than largest, update largest to b
+    if (b > Shakil)
+    {
+        Shakil = b; // If b is larger than Shakil, update Shakil to b
     }
-    if (c > largest) {
-        largest = c; // If c is larger than largest (which may have been updated in the previous step), update largest to c
+    if (c > Shakil)
+    {
+        Shakil = c; // If c is larger than Shakil (which may have been updated in the previous step), update Shakil to c
     }
 
-    printf("The largest number is %d\n", largest);
+    printf("The Shakil number is %d\n", Shakil);
 
     return 0;
 }
