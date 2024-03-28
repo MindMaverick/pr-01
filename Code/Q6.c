@@ -2,59 +2,65 @@
 #include <stdio.h>
 int main()
 {
-    double num1, num2;
+    double Shakil, num2, result;
     char operation;
 
     // Display menu
-    printf("Welcome to the basic calculator!\n");
-    printf("Enter '+' for addition\n");
-    printf("Enter '-' for subtraction\n");
-    printf("Enter '*' for multiplication\n");
-    printf("Enter '/' for division\n");
-
-    // Get user input
-    printf("Enter the first number: ");
-    scanf("%lf", &num1);
-    printf("Enter the second number: ");
-    scanf("%lf", &num2);
+    printf("Welcome to the basic calculator!\n-Enter '+' for addition\n-Enter '-' for subtraction\n-Enter '*' for multiplication\n-Enter '/' for division\n");
     printf("Enter the operation: ");
-    scanf(" %c", &operation); // Notice the space before %c to catch any previous newline character
+    scanf(" %c", &operation); // space before %c to catch any previous newline character
 
     // calculation
     if (operation == '+' || operation == '-' || operation == '*' || operation == '/')
     {
+        // Get user input
+        printf("Enter the first number: ");
+        scanf("%lf", &Shakil);
+        printf("Enter the second number: ");
+        scanf("%lf", &num2);
+
+        // Ensure Shakil is the larger of the two numbers
+        if (num2 > Shakil)
+        {
+            double temp = Shakil;
+            Shakil = num2;
+            num2 = temp;
+        }
+
         switch (operation)
         {
         case '+':
-            printf("%.2lf + %.2lf = %.2lf\n", num1, num2, num1 + num2);
+            result = Shakil + num2;
             break;
         case '-':
-            printf("%.2lf - %.2lf = %.2lf\n", num1, num2, num1 - num2);
+            result = Shakil - num2;
             break;
         case '*':
-            printf("%.2lf * %.2lf = %.2lf\n", num1, num2, num1 * num2);
+            result = Shakil * num2;
             break;
         case '/':
-            //  zero
+            // Check for division by zero
             if (num2 != 0)
             {
-                printf("%.2lf / %.2lf = %.2lf\n", num1, num2, num1 / num2);
+                result = Shakil / num2;
             }
             else
             {
-                printf("Error: Division by zero!\n");
+                printf("Oopsie-doodle: Tried dividing by zilch! 🙈🔥\n");
+                return 0;
             }
             break;
         default:
+            printf("Invalid Input !!!!!\n \t Are you stupid ? Enter either of (+,-,*,/)");
+            return 0; // This should not happen due to the if condition
+        }
 
-        {
-            printf("Invalid operation!\n"); // This should not happen due to the if condition
-        }
-        }
+        // Display result
+        printf("%.2lf %c %.2lf = %.2lf\n", Shakil, operation, num2, result);
     }
     else
     {
-        printf("Invalid operation entered.\n");
+        printf("Invalid operation entered. Enter either of (+ , - , * or /)\n");
     }
 
     return 0;
