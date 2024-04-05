@@ -1,0 +1,14 @@
+1. Write a program in C that converts a decimal number to any other base (binary, octal, and hexadecimal).
+
+
+2. Write a program in C that converts a number given in any other base (binary, octal, and hexadecimal) to decimal.
+
+
+3. Write a program in C that converts an octal number to binary and hexadecimal.
+
+4. Write a program in C that converts a hexadecimal number to binary and octal.
+
+
+5. Write a program in C that performs addition of two numbers given in any base (consider the base 2, 8, 10, 16).
+
+6. Write a program in C that performs subtraction of two numbers given in any base (consider the base 2, 8, 10, 16).
