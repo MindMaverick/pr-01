@@ -1,0 +1,19 @@
+Southeast University 
+Programming Language I – C 
+Practice Problems 
+1. Write a C program to calculate the area of a circle given its radius. The formula for the area of a circle is A = π * r^2, where A is the area and r as the radius. Take radius (r) as input from the user and then display the calculated area. 
+2. Write a C program to calculate the area of a rectangle given its length and width. The formula for the area of a rectangle is A = length * width, where A is the area, length is the length of the rectangle, and width is the width of the rectangle. Prompt the user to input the length and width, then display the calculated area. 
+Try the following using both if else and switch case 
+3. Write a C program to find a maximum between three numbers. 
+4. Traffic Light Controller: 
+Write a program to simulate a traffic light controller. Ask the user to enter the current colour of the traffic light (Red, Yellow, or Green) and based on this input, display the appropriate action (Stop, Prepare to Stop, or Go).  
+Use both if-else and switch-case constructs to implement this program. 
+5. Student Grade Calculator: 
+Create a program that calculates the grade of a student based on their score. Ask the user to input the score, then determine and display the corresponding grade (A, B, C, D, or F) based on your university grading system.  
+Implement this program using both if-else and switch-case statements. 
+6. Simple Calculator: 
+Develop a basic calculator program that performs addition, subtraction, multiplication, and division. Ask the user to enter two numbers and select an operation (+, -, *, /). Create a menu for the options. Perform the calculation and display the result.  
+Use both if-else and switch-case constructs to handle the different operations. 
+7. Day of the Week Finder: 
+Write a program that takes an integer input representing a day of the week and prints the corresponding name of the day. If the user presses 1, it will print Sunday, if press 2, print Monday etc. Implement this program using both if-else and switch-case constructs.
+

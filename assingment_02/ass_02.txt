@@ -1,0 +1,42 @@
+Southeast University 
+Programming Language I – C 
+Practice Problems 
+Try the following using for/while/ do...while loop 
+1. Sum of Natural Numbers: 
+Create a program that calculates the sum of natural numbers up to a given limit. Ask  the user to input the limit (a positive integer), then use a for loop to calculate and  display the sum of all natural numbers from 1 to the given limit. 
+2. Print Multiplication Table: 
+Write a program to print the multiplication table of a given number. Ask the user to  input a number, then use a for loop to print its multiplication table from 1 to 10. 
+3. Printing odd numbers within a Specific Range  
+Imagine you're participating in a math club activity where you're tasked with  identifying and printing all the odd numbers within a specific range. Your task is to  create a program that takes a starting and ending point from the user and prints all the  odd numbers within that range. Remember, odd numbers are those that cannot be  divided evenly by 2, leaving a remainder of 1 when divided by 2. Use a for loop to  iterate through the numbers within the given range and print only the odd ones. 
+4. Sum of Even Numbers within a Specific Range  
+Picture yourself attending a mathematics workshop where you're presented with a  challenge: calculate the sum of all even numbers within a range specified by you.  Your task is to create a program that prompts you to enter a starting and ending point,  then calculates and displays the sum of all even numbers within that range. Even  numbers are those divisible by 2 without leaving a remainder. Use a for loop to iterate  through the numbers within the given range and add up only the even ones. 
+5 Try the following using nested for loop 
+1. Write a C program to print the following output:  
+1 2 3 4 
+5 6 7 8 
+9 10 11 12
+2. Write a C program to print the following output:  
+* * * 
+* * * 
+* * * 
+* * * 
+3. Write a C program to print the following output: 
+* 
+* * 
+* * * 
+* * * * 
+4. Write a C program to print the following output: 
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+5. Write a C program to print the following output:  
+2 
+4 6 
+8 10 12 
+14 16 18 20
+6. Write a C program to print the following output:  
+1 2 3 4 
+5 6 7 
+8 9 
+10
