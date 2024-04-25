@@ -1,25 +1,26 @@
 #include <stdio.h>
 
+void kingofmadrid(int i, int count, int row)
+{
+    if (i > row) // Stop when we have printed 'row' rows
+        return;
+
+    for (int j = 1; j <= i; j++)
+    {
+        if (count % 2 == 0)
+            printf("%d ", count);
+        else
+            printf("%d ", count + 1);
+        count += 2;
+    }
+    printf("\n");
+    kingofmadrid(i + 1, count, row);
+}
+
 int main(void)
 {
-    int i, j, count;
-    count = 1;
     printf("Let's print a shape with even numbers\n");
-    for (i = 1; i <= 4; i++)
-    {
-        for (j = 1; j <= i; j++)
-        {
-            if (count % 2 == 0) // dont make mistakes with = and == again;; im taking to you yes u or I.
-            {
-                printf("%d ", count);
-            }
-            else
-            {
-                printf("%d ", count + 1);
-            }
-            count += 2; 
-        }
-        printf("\n");
-    }
+    int row = 4;             // Define and assign the value of 'row'
+    kingofmadrid(1, 1, row); // Start with count = 1
     return 0;
 }
