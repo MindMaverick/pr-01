@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+void reverseString(char str[])
+{
+    int len = strlen(str);
+    for (int i = 0; i < len / 2; i++)
+    {
+        char temp = str[i];
+        str[i] = str[len - i - 1];
+        str[len - i - 1] = temp;
+    }
+}
+
+int main()
+{
+    char str[100];
+    char original[100];
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0';
+
+    strcpy(original, str);
+    reverseString(str);
+    int d = strcmp(original, str);
+    if (d == 0)
+    {
+        printf("True\n");
+    }
+    else
+    {
+        printf("False\n");
+    }
+    return 0;
+}
